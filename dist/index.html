@@ -17,20 +17,26 @@
   </head>
   <body>
 
+
 <div class="hero-unit">
 <header id="header">
     <h1>todos</h1>
-    <input id="new-todo" placeholder="What needs to be done?" autofocus="">
+    <div id="bar"></div>
+    <span class="octicon octicon-chevron-down"></span>
+    <input id="new_entry" placeholder="What needs to be done?" autofocus="">
 </header>
 
 <section id="main" style="display: block;">
-    <input id="toggle-all" type="checkbox">
-    <label for="toggle-all">Mark all as complete</label>
+    <!-- <input id="toggle-all" type="checkbox"> -->
+   <!--  <label for="toggle-all">Mark all as complete</label> -->
     <ul id="todo-list">
         
         <!--ACTIVE-->   
             <li data-id="e3bff8ed-ca39-477b-af58-5b05be6f20e4">
                 <div class="view">
+                    
+                    <span class="octicon octicon-check"></span>
+
                     <input class="toggle" type="checkbox">
                     <label>test</label>
                     <button class="destroy"></button>
@@ -38,7 +44,10 @@
                 <input class="edit" value="test">
             </li>
 
-             <div class="notifications"><span class="octicon octicon-primitive-dot"></span></div>
+          
+
+             
+
              <span class="octicon octicon-x"></span>
 
         <!--COMPLETED-->    
@@ -61,15 +70,15 @@
         
         </ul>
 </section>
+
 </div> <!--End of Hero Unit-->
 
 
-
-  <footer id="footer" style="display: block;">
-    <span id="todo-count"><strong>0</strong> items left</span>
-    <ul id="filters">
+  <footer>
+    <span><strong>0</strong> items left</span>
+    <ul>
         <li>
-            <a class="selected" href="#/all">All</a>
+            <a href="#/all">All</a>
         </li>
         <li>
             <a href="#/active">Active</a>
@@ -108,6 +117,22 @@
 
 
 
+
+    <div class="hero-unit">
+        <header>
+            <input type="text" placeholder="what needs to be done?">
+        </header>
+        <ul class="list">
+            <li class="task">
+                <input type="checkbox" name="todo">
+                <label class="title" type="text"</label>
+                <button class=""></button>
+            </li>
+        </ul>
+    </div>
+
+
+    
 
     <script src="scripts/vendor.js"></script>
 
