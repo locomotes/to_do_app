@@ -15,68 +15,32 @@
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
-  <body>
 
+<body>
 
 <div class="hero-unit">
+
 <header id="header">
-    <h1>todos</h1>
-    <div id="bar"></div>
-    <span class="octicon octicon-chevron-down"></span>
+    <h1><span id="underscore">_.</span>todo</h1>
+    <div id="bar">
+        <span class="octicon octicon-chevron-down"></span>
+        <span class="octicon octicon-diff-renamed"></span>
+    </div>
     <input id="new_entry" placeholder="What needs to be done?" autofocus="">
+
 </header>
 
-<section id="main" style="display: block;">
-    <!-- <input id="toggle-all" type="checkbox"> -->
-   <!--  <label for="toggle-all">Mark all as complete</label> -->
-    <ul id="todo-list">
+
+
+     <!--  <button class="destroy"><span class="octicon octicon-x"></span></div></button> -->
         
-        <!--ACTIVE-->   
-            <li data-id="e3bff8ed-ca39-477b-af58-5b05be6f20e4">
-                <div class="view">
-                    
-                    <span class="octicon octicon-check"></span>
 
-                    <input class="toggle" type="checkbox">
-                    <label>test</label>
-                    <button class="destroy"></button>
-                </div>
-                <input class="edit" value="test">
-            </li>
-
-          
-
-             
-
-             <span class="octicon octicon-x"></span>
-
-        <!--COMPLETED-->    
-            <li class="completed" data-id="e3bff8ed-ca39-477b-af58-5b05be6f20e4">
-                <div class="view">
-                    <input class="toggle" type="checkbox" checked="">
-                    <label>test</label>
-                    <button class="destroy"></button>
-                </div>
-                <input class="edit" value="test">
-            </li>
-            
-            <!--MODIFIED COMPLETED to not include ability to rewrite-->
-            <li class="completed" data-id="e3bff8ed-ca39-477b-af58-5b05be6f20e4">
-                    <input class="toggle" type="checkbox" checked="">
-                    <label>test</label>
-                    <button class="destroy"></button>
-            </li>
-        
-        
-        </ul>
-</section>
 
 </div> <!--End of Hero Unit-->
 
-
   <footer>
     <span><strong>0</strong> items left</span>
-    <ul>
+    <ul id="footernav">
         <li>
             <a href="#/all">All</a>
         </li>
@@ -87,10 +51,11 @@
             <a href="#/completed">Completed</a>
         </li>
     </ul>
-    <button id="clear-completed">Clear completed (2)</button>
+    <button id="clear">Clear completed (#)</button>
 </footer>
 
 
+<<<<<<< HEAD
     <div class="hero-unit">
             <fieldset id ="itemList">
                 <input type="text" name="addItem" placeholder="what needs to be done?">
@@ -98,15 +63,52 @@
             </fieldset>
         <ul class="list">
             <li class="task">
-                <!-- <input type="checkbox" name="todo">
+                <input type="checkbox" name="todo">
                 <label class="title" type="text"</label>
-                <button class=""></button> -->
+                <button class=""></button>
                 <li>testing</li>
             </li>
         </ul>
-    </div>
+    </div> 
+=======
 
-    <script src="scripts/vendor.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+>>>>>>> bbaff5dfaff25c02ae0d9164c2cea6fa58400eb1
+
+    <!-- build:js scripts/vendor.js
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
         <script src="scripts/main.js"></script>
 </body>
