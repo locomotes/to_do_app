@@ -9,35 +9,70 @@
 
     <link rel="stylesheet" href="styles/vendor.css">
 
+    <link rel="stylesheet" href="fonts/octicons/octicons.css">
+
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
-  <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
+<body>
 
-        <li>Sass</li>
+<div class="hero-unit">
 
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+<header id="header">
+    <h1><span id="underscore">_.</span>todo</h1>
+    <div id="bar">
+        <span class="octicon octicon-chevron-down"></span>
+        <span class="octicon octicon-diff-renamed"></span>
     </div>
+    <input id="new_entry" placeholder="What needs to be done?" autofocus="">
+    <div class="aggregate">
 
-    <script src="scripts/vendor.js"></script>
+    </div>
+</header>
+
+
+
+     <!--  <button class="destroy"><span class="octicon octicon-x"></span></div></button> -->
+        
+
+
+</div> <!--End of Hero Unit-->
+
+  <footer>
+    <span><strong>0</strong> items left</span>
+    <ul id="footernav">
+        <li>
+            <a href="#/all">All</a>
+        </li>
+        <li>
+            <a href="#/active">Active</a>
+        </li>
+        <li>
+            <a href="#/completed">Completed</a>
+        </li>
+    </ul>
+    <button id="clear">Clear completed (#)</button>
+</footer>
+    
+    <script type="text/template" id="todotemplate">
+        <li id=<%=id%> class="todo">
+            <div class="view">
+                <span id="check" class="octicon octicon-check"></span>
+                <label id="new_entry"><%= new_entry %></label>
+                <span id="kill" class="octicon octicon-x"></span>
+            </div>
+        </li> 
+    </script>
+
+
+    <!-- build:js scripts/vendor.js
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
         <script src="scripts/main.js"></script>
 </body>
