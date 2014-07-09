@@ -27,7 +27,8 @@
         <span class="octicon octicon-diff-renamed"></span>
     </div>
     <input id="new_entry" placeholder="What needs to be done?" autofocus="">
-
+    <div class="aggregate">
+    </div>
 </header>
 
 
@@ -53,55 +54,17 @@
     </ul>
     <button id="clear">Clear completed (#)</button>
 </footer>
-
-
-<<<<<<< HEAD
-    <div class="hero-unit">
-            <fieldset id ="itemList">
-                <input type="text" name="addItem" placeholder="what needs to be done?">
-                <input type="button" name="add" value="add">
-            </fieldset>
-        <ul class="list">
-            <li class="task">
-                <input type="checkbox" name="todo">
-                <label class="title" type="text"</label>
-                <button class=""></button>
-                <li>testing</li>
-            </li>
-        </ul>
-    </div> 
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
->>>>>>> bbaff5dfaff25c02ae0d9164c2cea6fa58400eb1
+    <script type="text/template" id="todotemplate">
+        <li class="todo">
+            <div class="view">
+                <span class="octicon octicon-check"></span>
+                <label class="new_entry"><%= new_entry %></label>
+                <span class="octicon octicon-x"></span>
+            </div>
+        </li> 
+    </script>
+
 
     <!-- build:js scripts/vendor.js
     <!-- bower:js -->

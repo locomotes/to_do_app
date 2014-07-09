@@ -1,7 +1,7 @@
-var todotemplate = _.template$("todo-template").html();
-$("list").append(renderedtemplate);
+var todotemplate = _.template($(".aggregate").html() );
+$("list").append(todotemplate);
 
-var renderedtemplate = todotemplate(todo);
+// var renderedtemplate = todotemplate(todo);
 
 var item = [];
 
@@ -12,16 +12,15 @@ var ToDo = function(options) {
 	this.id = _.uniqueId(listItem);
 	this.active = true;
 	this.userinput = options.userinput;
-	}
-}
+};
 
 
-$("buttonname").click(function () {
-	var todo = new ToDo ({userinput: $(' ').val();
-		_.push(item);
+$(".octicon-diff-renamed").click(function () {
+	var todo = new ToDo ({userinput: $('#new_entry').val()
+		item.push('hello');
 
-	}
-})
+	});
+});
 
 // $(function(){
 //     $('input[name="add"]').click(function() {
@@ -32,5 +31,5 @@ $("buttonname").click(function () {
 //     });
 // });
 
-$("list").append(renderedtemplate);
+$(".aggregate").append(todotemplate);
 
