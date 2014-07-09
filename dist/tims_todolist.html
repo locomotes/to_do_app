@@ -1,0 +1,11 @@
+<div class="container">
+  <form id="todoForm">
+      <input type="text" class="todoInput" placeholder="Enter Todo Item Here..." />
+  </form>
+  <div class="todoLeft"><span>0</span> item(s) left.</div>
+  <ul id="todoList"></ul>
+</div>
+
+<script type="text/template" id="todoTemplate">
+  <li id="<%= id %>"><%= task %> <span>X</span></li>
+</script>
