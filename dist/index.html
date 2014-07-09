@@ -28,6 +28,7 @@
     </div>
     <input id="new_entry" placeholder="What needs to be done?" autofocus="">
     <div class="aggregate">
+
     </div>
 </header>
 
@@ -56,11 +57,11 @@
 </footer>
     
     <script type="text/template" id="todotemplate">
-        <li class="todo">
+        <li id="<%=id%>" class="todo">
             <div class="view">
-                <span class="octicon octicon-check"></span>
-                <label class="new_entry"><%= new_entry %></label>
-                <span class="octicon octicon-x"></span>
+                <span id="check" class="octicon octicon-check"></span>
+                <label id="new_entry"><%= new_entry %></label>
+                <span id="kill" class="octicon octicon-x"></span>
             </div>
         </li> 
     </script>
